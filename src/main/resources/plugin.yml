@@ -1,0 +1,10 @@
+name: EasyJoinTimer
+version: '1.0'
+main: fur.kiyoshi.easyjointimer.EasyJoinTimer
+website: 'https://kiyoshi.github.space'
+description: 'Official Easy Join Timer plugin for ScreenShare'
+authors:
+  - MyNameIsKiyoshi
+api-version: 1.16
+depend:
+  - PlaceholderAPI
