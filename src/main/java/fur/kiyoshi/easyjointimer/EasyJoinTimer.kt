@@ -41,7 +41,10 @@ class EasyJoinTimer : JavaPlugin() {
                 val duration = Duration.between(playerTime, Instant.now())
                 val hours = duration.toHours()
                 val minutes = duration.toMinutes()
-                val seconds = duration.seconds
+                var seconds = duration.seconds.toDouble().toInt()
+                if (seconds >= 59) {
+                    seconds %= 60
+                }
                 val timeString = String.format("%02d:%02d:%02d", hours, minutes, seconds)
                 PlaceholderAPI.setPlaceholders(Bukkit.getOfflinePlayer(player.uniqueId), listOf("%easyjointimer_timer%")).toString().replace("%easyjointimer_timer%", timeString)
                 playerTimes.remove(player.uniqueId)
@@ -68,7 +71,10 @@ class EasyJoinTimerPlaceholder(private val plugin: EasyJoinTimer) : PlaceholderE
         val duration = Duration.between(playerTime, Instant.now())
         val hours = duration.toHours()
         val minutes = duration.toMinutes()
-        val seconds = duration.seconds
+        var seconds = duration.seconds.toDouble().toInt()
+        if (seconds >= 59) {
+            seconds %= 60
+        }
         return when (identifier) {
             "timer" -> {
                 String.format("%02d:%02d:%02d", hours, minutes, seconds)

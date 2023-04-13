@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/EasyJoinTimer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/EasyJoinTimer.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/EasyJoinTimer.test.iml" filepath="$PROJECT_DIR$/.idea/modules/EasyJoinTimer.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fur.kiyoshi.EasyJoinTimer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fur.kiyoshi.EasyJoinTimer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fur.kiyoshi.EasyJoinTimer.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fur.kiyoshi.EasyJoinTimer.test.iml" />
     </modules>
   </component>
 </project>
